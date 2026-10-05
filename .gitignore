@@ -1,0 +1,45 @@
+# --- Claude Code (configuracion local de la herramienta) ---
+.claude/
+
+# --- Secretos y configuracion local (se versiona solo .env.example) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- Node / Vite ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Logs y temporales ---
+logs/
+*.log
+*.tmp
+*.bak
+
+# --- Docker (ajustes locales) ---
+docker-compose.override.yml
+
+# --- Editores y sistema operativo ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.sw?
+.DS_Store
+Thumbs.db
