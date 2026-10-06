@@ -152,7 +152,7 @@ Luego acerque un llavero registrado al lector y compruebe que:
 | Sin conexión | Guarda hasta 20 lecturas y las envía al reconectar | Descarta la lectura |
 | Reconexión Wi-Fi | Automática, cada 30 s | Solo al reiniciar |
 | Fallo del módulo RFID | Detecta que el RC522 se colgó y lo reinicia; si falla 3 revisiones seguidas (unos 15 s), reinicia la placa | No aplica |
-| Aviso al usuario | Ninguno | Pitido corto al leer |
+| Aviso al usuario | Ninguno (solo monitor serie) | Ninguno (solo monitor serie) |
 
 ## Solución de problemas
 
