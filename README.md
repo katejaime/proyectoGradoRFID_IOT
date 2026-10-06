@@ -86,8 +86,9 @@ docker compose down -v                 # apagar y BORRAR la base de datos
 
 ## Lectores RFID (paradas físicas)
 
-El firmware de los lectores se programa por separado (placas ESP8266 con RC522 y
-M5 AtomS3 con RFID2). Cada lector:
+El firmware de los lectores está en la carpeta [`lectores/`](lectores/README.md), con la
+guía paso a paso para replicarlos (NodeMCU ESP8266 con RC522 y M5Stack AtomS3 Lite con
+RFID 2 Unit). Cada lector:
 
 - Se conecta a una red WiFi configurada en su firmware.
 - **Busca solo la IP del servidor**: prueba la IP configurada y, si no responde, recorre la
@@ -118,6 +119,7 @@ gracias a `rabbitmq/20-mqtt.conf` (`mqtt.exchange`); el backend declara la cola
 │   └── app/                  api · core · models · schemas · services
 ├── front_react/              Frontend React + TypeScript + Tailwind
 │   └── src/                  pages (admin, conductor) · components · lib
+├── lectores/                 Firmware de los lectores RFID (Arduino) y guía para replicarlos
 ├── db/
 │   ├── restore.sh            Restaura el respaldo en el primer arranque
 │   └── backup_db             Respaldo de la base (no versionado)

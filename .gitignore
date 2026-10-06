@@ -5,6 +5,7 @@
 .env
 .env.*
 !.env.example
+lectores/**/secrets.h
 
 # --- Python ---
 __pycache__/
