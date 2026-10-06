@@ -31,6 +31,7 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://admin:admin123@db:5432/basedatos
       RABBITMQ_URL: amqp://user:1234@rabbitmq:5672/
+      TZ: America/Bogota
     depends_on:
       - db
       - rabbitmq
